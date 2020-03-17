@@ -4,7 +4,7 @@ import AdditionalFeature from './AdditionalFeature';
 const AdditionalFeatures = props => {
   return (
     <div className="content">
-      <h4 style={{fontSize: "1.3rem", textAlign: "center"}}>Additional Features</h4>
+      <h4 style={{fontSize: "2rem", textAlign: "center"}}>Additional Features:</h4>
       {props.additionalFeatures.length ? (
         <ol type="1">
           {props.additionalFeatures.map(item => (

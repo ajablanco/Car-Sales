@@ -37,8 +37,7 @@ export const reducer = (state = initialState, action) => {
                     ]
                 }
             }
-        case 'CLEAR_FEATURES':
-          console.log("Clear All Features")
+
         default:
             return state;
     }

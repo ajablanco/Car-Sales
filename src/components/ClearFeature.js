@@ -6,9 +6,9 @@ const ClearFeature = () => {
     const {} = useSelector(state => state);
     const dispatch = useDispatch()
     
-      dispatch({type: 'CLEAR_FEATURES'})
+      dispatch({type: 'TEST'})
   return (
-      <button className="button" onClick={clearFeatures} style={{backgroundColor: "red", margin: "0", padding: "5%"}}>CLEAR ALL</button>
+      <button className="button" onClick={clearFeatures} style={{backgroundColor: "#333", margin: "0"}}>CLEAR ALL</button>
   );
 };
 

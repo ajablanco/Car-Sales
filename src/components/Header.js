@@ -12,14 +12,14 @@ const Header = props => {
         />
       </figure>
       <br />
-      <div className="carTitle" style={{display: "flex", flexDirection: "column", alignItems:"center"}}>
-        <p style={{fontSize: "1.8rem", color: "green"}}>Stock Price:</p>
+      <div className="carTitle" style={{display: "flex", justifyContent: "center"}}>
+        <p style={{fontSize: "2rem", color: "green", fontWeight: "bold", marginRight: "1%"}}>Stock Price: </p>
         <NumberFormat
-        style={{ fontSize: "2rem", color: "green"}}
+        style={{ fontSize: "2rem", color: "green", fontWeight: "bold"}}
         value={props.car.price}
         displayType={"text"}
         thousandSeparator={true}
-        prefix={"$"}
+        prefix={" $"}
       />
       </div>
     </div>
