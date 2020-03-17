@@ -2,9 +2,11 @@ import React from 'react';
 
 const AdditionalFeature = props => {
   return (
-    <li>
+    <li style={{fontSize: "1.1rem"}}>
       {/* Add an onClick that will let you add a feature to your car */}
-      <button className="button">Add</button>
+      <button className="button" onClick={() => {
+        props.addFeature(props.feature)
+      }}>Add</button>
       {props.feature.name} (+{props.feature.price})
     </li>
   );
