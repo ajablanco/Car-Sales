@@ -28,12 +28,13 @@ const App = props => {
           alignItems: "center"
         }}
       >
-        <AddedFeatures car={props.car} removeFeature={props.removeFeature} />
-        <ClearFeatures/>
         <AdditionalFeatures
           additionalFeatures={props.additionalFeatures}
           addFeature={props.addFeature}
         />
+        <AddedFeatures car={props.car} removeFeature={props.removeFeature} />
+        <ClearFeatures/>
+        
         <Total car={props.car} additionalPrice={props.additionalPrice} />
       </div>
     </div>
