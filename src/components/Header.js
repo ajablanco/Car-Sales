@@ -1,14 +1,28 @@
-import React from 'react';
+import React from "react";
+import NumberFormat from "react-number-format";
 
 const Header = props => {
   return (
-    <>
-      <figure className="image is-128x128">
-        <img src={props.car.image} alt={props.car.name} />
+    <div >
+       <h1 style={{fontSize: "2.2rem", fontWeight: "bold", textAlign: "center"}}>{props.car.name}</h1>
+      <figure className="image is-400x400" >
+        <img
+          src={props.car.image}
+          alt={props.car.name}
+        />
       </figure>
-      <h2>{props.car.name}</h2>
-      <p>Amount: ${props.car.price}</p>
-    </>
+      <br />
+      <div className="carTitle" style={{display: "flex", justifyContent: "center"}}>
+        <p style={{fontSize: "2rem", color: "green", fontWeight: "bold", marginRight: "1%"}}>Stock Price: </p>
+        <NumberFormat
+        style={{ fontSize: "2rem", color: "green", fontWeight: "bold"}}
+        value={props.car.price}
+        displayType={"text"}
+        thousandSeparator={true}
+        prefix={" $"}
+      />
+      </div>
+    </div>
   );
 };
 
